@@ -1,8 +1,11 @@
 # amazon-to-obsidian
 
-Amazon.co.jp / Amazon.com / booklog.jp の書誌情報を、Obsidian の [Advanced URI](https://github.com/Vinzent03/obsidian-advanced-uri) プラグイン経由で指定 Vault のフォルダに Markdown として保存する Chrome 拡張機能です。
+Amazon.co.jp / Amazon.com / booklog.jp の書誌情報を、Obsidian の [Advanced URI](https://github.com/Vinzent03/obsidian-advanced-uri) プラグイン経由で指定 Vault のフォルダに Markdown として保存します。
 
-書き込みは `obsidian://adv-uri` を起動して OS のプロトコルハンドラに委譲するため、HTTP 通信や API トークンの管理は不要です。
+- **デスクトップ**: Chrome 拡張機能としてインストール
+- **iOS Safari**: ショートカットアプリから共有シート経由で起動 → [docs/ios-shortcut.md](docs/ios-shortcut.md)
+
+書き込みは `obsidian://adv-uri` を起動して OS のプロトコルハンドラに委譲するため、HTTP 通信や API トークンの管理は不要です。スクレイピング・Markdown 生成・Advanced URI 構築のロジックは `src/shared/` に集約され、Chrome 拡張と iOS ショートカットの双方から再利用されます。
 
 ## 必要なもの
 
@@ -17,7 +20,7 @@ npm install
 npm run build
 ```
 
-`build/` 以下に `popup.js` `options.js` `content.js` が生成されます。
+`build/` 以下に `popup.js` `options.js` `content.js` `shortcut.js` が生成されます (`shortcut.js` は iOS ショートカット用)。
 
 開発時は `npm run watch` で esbuild の監視モードを起動できます。
 

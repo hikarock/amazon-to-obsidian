@@ -9,9 +9,12 @@ export function buildAdvancedUri({
   folder,
   filename,
 }: AdvancedUriParams): string {
-  const filepath = folder ? `${folder}/${filename}` : filename
   const enc = encodeURIComponent
-  return `obsidian://adv-uri?vault=${enc(vault)}&filepath=${enc(filepath)}&clipboard=true&mode=new`
+  // filepath 全体を encode するとフォルダ区切りの `/` が `%2F` になり Advanced URI が階層として解釈しないため、セグメント単位で encode する
+  const segments = folder ? folder.split("/").filter(Boolean) : []
+  segments.push(filename)
+  const filepath = segments.map(enc).join("/")
+  return `obsidian://adv-uri?vault=${enc(vault)}&filepath=${filepath}&clipboard=true&mode=new`
 }
 
 export async function sendToObsidian(

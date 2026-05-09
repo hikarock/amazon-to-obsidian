@@ -1,7 +1,11 @@
-import type { BookMetadata } from "../shared/types"
+import type { BookMetadata } from "./types"
+
+// iOS ショートカットの構文チェッカは文字列・regex 中の `"` `\` を誤認してハイライトを崩すため、ソース上に直接出さず動的に構築する
+const BS = String.fromCharCode(92)
+const DQ = String.fromCharCode(34)
 
 const escapeYaml = (s: string): string =>
-  s.replace(/\\/g, "\\\\").replace(/"/g, '\\"')
+  s.split(BS).join(BS + BS).split(DQ).join(BS + DQ)
 
 const splitAuthors = (authors: string): string[] =>
   authors

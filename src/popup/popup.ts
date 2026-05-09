@@ -1,8 +1,7 @@
+import { sendToObsidian } from "../shared/advanced-uri"
+import { sanitizeFilename } from "../shared/filename"
+import { buildMarkdown } from "../shared/markdown"
 import type { BookMetadata, MediaType, VaultConfig } from "../shared/types"
-import { sendToObsidian } from "./advanced-uri"
-import { buildMarkdown } from "./markdown"
-
-const FORBIDDEN_FILENAME_CHARS = /[\\/:*?"<>|]/g
 
 const buttonElm = document.getElementById("button") as HTMLInputElement
 const coverElm = document.getElementById("cover") as HTMLImageElement
@@ -120,8 +119,7 @@ buttonElm.addEventListener("click", async (evt) => {
     asin: inputAsinElm.value,
   }
   const markdown = buildMarkdown(meta)
-  const filename =
-    meta.title.replace(FORBIDDEN_FILENAME_CHARS, "_").trim() || "Untitled"
+  const filename = sanitizeFilename(meta.title)
   try {
     await sendToObsidian(
       { vault: cfg.vault, folder: cfg.folder, filename },

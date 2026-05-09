@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./popup.css" />
+  </head>
+  <body>
+    <form id="form" class="form">
+      <div class="image-wrapper">
+        <img id="cover" class="image" src="" alt="cover" />
+      </div>
+      <textarea id="title" class="textarea" placeholder="Title" required></textarea>
+      <input type="text" id="authors" class="input" placeholder="Authors" />
+      <input type="text" id="publisher" class="input" placeholder="Publisher" />
+      <input type="date" id="publication-date" class="input" />
+      <input type="text" id="url" class="input" placeholder="URL" />
+      <input type="number" id="pages" class="input" placeholder="Pages" />
+      <input type="hidden" id="asin" />
+      <select id="media-type" class="select">
+        <option value="Book" selected>Book</option>
+        <option value="Kindle">Kindle</option>
+        <option value="Audible">Audible</option>
+      </select>
+      <select id="vault" class="select" required></select>
+      <input type="submit" id="button" class="button" value="Add to Obsidian" />
+    </form>
+    <div id="not-available" class="alert not-available">Not available.</div>
+    <div id="processing" class="alert processing">Processing...</div>
+    <div id="error" class="alert error">Error.</div>
+    <script src="/build/popup.js"></script>
+  </body>
+</html>

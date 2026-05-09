@@ -1,0 +1,21 @@
+{
+  "name": "amazon-to-obsidian",
+  "version": "0.1.0",
+  "description": "Amazon/ブクログの書誌情報を Obsidian Vault に Markdown として登録する Chrome 拡張機能",
+  "private": true,
+  "scripts": {
+    "build": "node build.mjs",
+    "watch": "node build.mjs --watch",
+    "typecheck": "tsc --noEmit",
+    "lint": "oxlint src build.mjs",
+    "lint:fix": "oxlint --fix src build.mjs",
+    "format": "oxlint --fix src build.mjs && oxfmt src build.mjs"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.270",
+    "esbuild": "^0.21.0",
+    "oxfmt": "^0.2.0",
+    "oxlint": "^1.16.0",
+    "typescript": "^5.4.0"
+  }
+}

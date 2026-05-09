@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./options.css" />
+  </head>
+  <body>
+    <div id="toast" class="toast">Saved.</div>
+    <div class="settings">
+      <h1 class="heading">Obsidian Vault Settings</h1>
+      <p class="description">
+        Obsidian の Advanced URI プラグインを有効化したうえで、Vault 名と保存先フォルダを最大 2 セットまで登録できます。
+        Folder Path は空欄で Vault ルート、`Books/Amazon` のようにスラッシュ区切りでサブフォルダを指定できます。
+      </p>
+      <form class="form">
+        <div class="inputs">
+          <label for="name-1" class="label">Name 1</label>
+          <input type="text" id="name-1" class="input" placeholder="ex: My Personal Vault" />
+          <label for="vault-1" class="label">Vault Name 1</label>
+          <input type="text" id="vault-1" class="input" placeholder="ex: MyVault" />
+          <label for="folder-1" class="label">Folder Path 1</label>
+          <input type="text" id="folder-1" class="input" placeholder="ex: Books/Amazon" />
+        </div>
+        <div class="inputs">
+          <label for="name-2" class="label">Name 2</label>
+          <input type="text" id="name-2" class="input" placeholder="ex: Work Vault" />
+          <label for="vault-2" class="label">Vault Name 2</label>
+          <input type="text" id="vault-2" class="input" placeholder="ex: WorkVault" />
+          <label for="folder-2" class="label">Folder Path 2</label>
+          <input type="text" id="folder-2" class="input" placeholder="ex: Books" />
+        </div>
+        <div class="action">
+          <input id="save-button" class="button" value="Save" />
+        </div>
+      </form>
+    </div>
+    <script src="/build/options.js"></script>
+  </body>
+</html>

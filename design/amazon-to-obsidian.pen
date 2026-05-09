@@ -1,0 +1,629 @@
+{
+  "version": "2.11",
+  "children": [
+    {
+      "type": "frame",
+      "id": "BJhYf",
+      "x": 0,
+      "y": 660,
+      "name": "Section 16",
+      "width": 80,
+      "height": 112,
+      "fill": "#F5F5F5",
+      "cornerRadius": 16,
+      "layout": "vertical",
+      "gap": 12,
+      "padding": 32,
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "BFpSR",
+          "name": "Icon 16x16",
+          "clip": true,
+          "width": 16,
+          "height": 16,
+          "cornerRadius": 3,
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "cornerRadius": 3,
+              "id": "bg_16",
+              "x": 0,
+              "y": 0,
+              "name": "bg16",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 180,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#7C3AED",
+                    "position": 0
+                  },
+                  {
+                    "color": "#5B21B6",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": 16,
+              "height": 16
+            },
+            {
+              "type": "path",
+              "id": "gem_16",
+              "x": 5.38,
+              "y": 1.25,
+              "name": "gem16",
+              "geometry": "M382.3 475.6c-3.1 23.4-26 41.6-48.7 35.3-32.4-8.9-69.9-22.8-103.6-25.4l-51.7-4a34 34 0 0 1-22-10.2l-89-91.7a34 34 0 0 1-6.7-37.7s55-121 57.1-127.3c2-6.3 9.6-61.2 14-90.6 1.2-7.9 5-15 11-20.3l105.3-94.8a34.1 34.1 0 0 1 49.6 4.3l88.4 112.4a37 37 0 0 1 7.6 22.4c0 21.3 1.8 65 13.6 93.2 11.5 27.3 32.5 57 43.5 71.5a17.3 17.3 0 0 1 1.3 19.2 1494 1494 0 0 1-44.8 70.6c-15 22.3-21.9 49.9-25 73.1z",
+              "viewBox": [
+                50,
+                0,
+                410,
+                515
+              ],
+              "fill": "#FFFFFF",
+              "width": 5.25,
+              "height": 6.75
+            },
+            {
+              "type": "path",
+              "id": "bookL_16",
+              "x": 3.75,
+              "y": 9,
+              "name": "Book Left",
+              "opacity": 0.95,
+              "geometry": "M5.25 0l0 6q0 0.5-0.5 0.5l-4.25 0q-0.5 0-0.5-0.5l0-5q0-0.5 0.5-0.5l4.25 0q0-0.5 0.5-0.5z",
+              "fill": "#FFFFFF",
+              "width": 4.25,
+              "height": 5
+            },
+            {
+              "type": "path",
+              "id": "bookR_16",
+              "x": 8,
+              "y": 9,
+              "name": "Book Right",
+              "opacity": 0.95,
+              "geometry": "M0 0l0 6q0 0.5 0.5 0.5l4.25 0q0.5 0 0.5-0.5l0-5q0-0.5-0.5-0.5l-4.25 0q0-0.5-0.5-0.5z",
+              "fill": "#FFFFFF",
+              "width": 4.25,
+              "height": 5
+            },
+            {
+              "type": "rectangle",
+              "id": "spine_16",
+              "x": 7.75,
+              "y": 9,
+              "name": "Spine",
+              "opacity": 0.3,
+              "fill": "#5B21B6",
+              "width": 0.5,
+              "height": 5
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "HZaCk",
+          "name": "lbl16",
+          "fill": "#999999",
+          "content": "16×16",
+          "fontFamily": "Inter",
+          "fontSize": 10,
+          "fontWeight": "500"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "CcyNM",
+      "x": 120,
+      "y": 660,
+      "name": "Section 32",
+      "width": 96,
+      "height": 128,
+      "fill": "#F5F5F5",
+      "cornerRadius": 16,
+      "layout": "vertical",
+      "gap": 12,
+      "padding": 32,
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "mtXIJ",
+          "name": "Icon 32x32",
+          "clip": true,
+          "width": 32,
+          "height": 32,
+          "cornerRadius": 5,
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "cornerRadius": 5,
+              "id": "bg_32",
+              "x": 0,
+              "y": 0,
+              "name": "bg32",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 180,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#7C3AED",
+                    "position": 0
+                  },
+                  {
+                    "color": "#5B21B6",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": 32,
+              "height": 32
+            },
+            {
+              "type": "path",
+              "id": "gem_32",
+              "x": 10.75,
+              "y": 2.5,
+              "name": "gem32",
+              "geometry": "M382.3 475.6c-3.1 23.4-26 41.6-48.7 35.3-32.4-8.9-69.9-22.8-103.6-25.4l-51.7-4a34 34 0 0 1-22-10.2l-89-91.7a34 34 0 0 1-6.7-37.7s55-121 57.1-127.3c2-6.3 9.6-61.2 14-90.6 1.2-7.9 5-15 11-20.3l105.3-94.8a34.1 34.1 0 0 1 49.6 4.3l88.4 112.4a37 37 0 0 1 7.6 22.4c0 21.3 1.8 65 13.6 93.2 11.5 27.3 32.5 57 43.5 71.5a17.3 17.3 0 0 1 1.3 19.2 1494 1494 0 0 1-44.8 70.6c-15 22.3-21.9 49.9-25 73.1z",
+              "viewBox": [
+                50,
+                0,
+                410,
+                515
+              ],
+              "fill": "#FFFFFF",
+              "width": 10.5,
+              "height": 13.5
+            },
+            {
+              "type": "path",
+              "id": "bookL_32",
+              "x": 7.5,
+              "y": 18,
+              "name": "Book Left",
+              "opacity": 0.95,
+              "geometry": "M10.5 0l0 12q0 1-1 1l-8.5 0q-1 0-1-1l0-10q0-1 1-1l8.5 0q0-1 1-1z",
+              "fill": "#FFFFFF",
+              "width": 8.5,
+              "height": 10
+            },
+            {
+              "type": "path",
+              "id": "bookR_32",
+              "x": 16,
+              "y": 18,
+              "name": "Book Right",
+              "opacity": 0.95,
+              "geometry": "M0 0l0 12q0 1 1 1l8.5 0q1 0 1-1l0-10q0-1-1-1l-8.5 0q0-1-1-1z",
+              "fill": "#FFFFFF",
+              "width": 8.5,
+              "height": 10
+            },
+            {
+              "type": "rectangle",
+              "id": "spine_32",
+              "x": 15.5,
+              "y": 18,
+              "name": "Spine",
+              "opacity": 0.3,
+              "fill": "#5B21B6",
+              "width": 1,
+              "height": 10
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "WvNNl",
+          "name": "lbl32",
+          "fill": "#999999",
+          "content": "32×32",
+          "fontFamily": "Inter",
+          "fontSize": 10,
+          "fontWeight": "500"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "RmEcr",
+      "x": 256,
+      "y": 660,
+      "name": "Section 48",
+      "width": 112,
+      "height": 148,
+      "fill": "#F5F5F5",
+      "cornerRadius": 16,
+      "layout": "vertical",
+      "gap": 12,
+      "padding": 32,
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "ZOw3u",
+          "name": "Icon 48x48",
+          "clip": true,
+          "width": 48,
+          "height": 48,
+          "cornerRadius": 8,
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "cornerRadius": 8,
+              "id": "bg_48",
+              "x": 0,
+              "y": 0,
+              "name": "bg48",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 180,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#7C3AED",
+                    "position": 0
+                  },
+                  {
+                    "color": "#5B21B6",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": 48,
+              "height": 48
+            },
+            {
+              "type": "path",
+              "id": "gem_48",
+              "x": 16.13,
+              "y": 3.75,
+              "name": "gem48",
+              "geometry": "M382.3 475.6c-3.1 23.4-26 41.6-48.7 35.3-32.4-8.9-69.9-22.8-103.6-25.4l-51.7-4a34 34 0 0 1-22-10.2l-89-91.7a34 34 0 0 1-6.7-37.7s55-121 57.1-127.3c2-6.3 9.6-61.2 14-90.6 1.2-7.9 5-15 11-20.3l105.3-94.8a34.1 34.1 0 0 1 49.6 4.3l88.4 112.4a37 37 0 0 1 7.6 22.4c0 21.3 1.8 65 13.6 93.2 11.5 27.3 32.5 57 43.5 71.5a17.3 17.3 0 0 1 1.3 19.2 1494 1494 0 0 1-44.8 70.6c-15 22.3-21.9 49.9-25 73.1z",
+              "viewBox": [
+                50,
+                0,
+                410,
+                515
+              ],
+              "fill": "#FFFFFF",
+              "width": 15.75,
+              "height": 20.25
+            },
+            {
+              "type": "path",
+              "id": "bookL_48",
+              "x": 11.25,
+              "y": 27,
+              "name": "Book Left",
+              "opacity": 0.95,
+              "geometry": "M15.75 0l0 18q0 1.5-1.5 1.5l-12.75 0q-1.5 0-1.5-1.5l0-15q0-1.5 1.5-1.5l12.75 0q0-1.5 1.5-1.5z",
+              "fill": "#FFFFFF",
+              "width": 12.75,
+              "height": 15
+            },
+            {
+              "type": "path",
+              "id": "bookR_48",
+              "x": 24,
+              "y": 27,
+              "name": "Book Right",
+              "opacity": 0.95,
+              "geometry": "M0 0l0 18q0 1.5 1.5 1.5l12.75 0q1.5 0 1.5-1.5l0-15q0-1.5-1.5-1.5l-12.75 0q0-1.5-1.5-1.5z",
+              "fill": "#FFFFFF",
+              "width": 12.75,
+              "height": 15
+            },
+            {
+              "type": "rectangle",
+              "id": "spine_48",
+              "x": 23.25,
+              "y": 27,
+              "name": "Spine",
+              "opacity": 0.3,
+              "fill": "#5B21B6",
+              "width": 1.5,
+              "height": 15
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 0.5,
+              "id": "line_48_0",
+              "x": 13.5,
+              "y": 31.5,
+              "name": "Line L1",
+              "opacity": 0.35,
+              "fill": "#7C3AED",
+              "width": 8.25,
+              "height": 1
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 0.5,
+              "id": "line_48_1",
+              "x": 13.5,
+              "y": 33.75,
+              "name": "Line L2",
+              "opacity": 0.35,
+              "fill": "#7C3AED",
+              "width": 6.75,
+              "height": 1
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 0.5,
+              "id": "line_48_2",
+              "x": 13.5,
+              "y": 36,
+              "name": "Line L3",
+              "opacity": 0.35,
+              "fill": "#7C3AED",
+              "width": 7.5,
+              "height": 1
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 0.5,
+              "id": "line_48_3",
+              "x": 26.25,
+              "y": 31.5,
+              "name": "Line R1",
+              "opacity": 0.35,
+              "fill": "#7C3AED",
+              "width": 8.25,
+              "height": 1
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 0.5,
+              "id": "line_48_4",
+              "x": 26.25,
+              "y": 33.75,
+              "name": "Line R2",
+              "opacity": 0.35,
+              "fill": "#7C3AED",
+              "width": 6.75,
+              "height": 1
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 0.5,
+              "id": "line_48_5",
+              "x": 26.25,
+              "y": 36,
+              "name": "Line R3",
+              "opacity": 0.35,
+              "fill": "#7C3AED",
+              "width": 7.5,
+              "height": 1
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "oee9e",
+          "name": "lbl48",
+          "fill": "#999999",
+          "content": "48×48",
+          "fontFamily": "Inter",
+          "fontSize": 10,
+          "fontWeight": "500"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "CPEnV",
+      "x": 408,
+      "y": 660,
+      "name": "Section 128",
+      "width": 192,
+      "height": 224,
+      "fill": "#F5F5F5",
+      "cornerRadius": 16,
+      "layout": "vertical",
+      "gap": 12,
+      "padding": 32,
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "frame",
+          "id": "P24wDo",
+          "name": "Icon 128x128",
+          "clip": true,
+          "width": 128,
+          "height": 128,
+          "cornerRadius": 22,
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "cornerRadius": 22,
+              "id": "bg_128",
+              "x": 0,
+              "y": 0,
+              "name": "bg128",
+              "fill": {
+                "type": "gradient",
+                "gradientType": "linear",
+                "enabled": true,
+                "rotation": 180,
+                "size": {
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#7C3AED",
+                    "position": 0
+                  },
+                  {
+                    "color": "#5B21B6",
+                    "position": 1
+                  }
+                ]
+              },
+              "width": 128,
+              "height": 128
+            },
+            {
+              "type": "path",
+              "id": "gem_128",
+              "x": 43,
+              "y": 10,
+              "name": "gem128",
+              "geometry": "M382.3 475.6c-3.1 23.4-26 41.6-48.7 35.3-32.4-8.9-69.9-22.8-103.6-25.4l-51.7-4a34 34 0 0 1-22-10.2l-89-91.7a34 34 0 0 1-6.7-37.7s55-121 57.1-127.3c2-6.3 9.6-61.2 14-90.6 1.2-7.9 5-15 11-20.3l105.3-94.8a34.1 34.1 0 0 1 49.6 4.3l88.4 112.4a37 37 0 0 1 7.6 22.4c0 21.3 1.8 65 13.6 93.2 11.5 27.3 32.5 57 43.5 71.5a17.3 17.3 0 0 1 1.3 19.2 1494 1494 0 0 1-44.8 70.6c-15 22.3-21.9 49.9-25 73.1z",
+              "viewBox": [
+                50,
+                0,
+                410,
+                515
+              ],
+              "fill": "#FFFFFF",
+              "width": 42,
+              "height": 54
+            },
+            {
+              "type": "path",
+              "id": "bookL_128",
+              "x": 30,
+              "y": 72,
+              "name": "Book Left",
+              "opacity": 0.95,
+              "geometry": "M42 0l0 48q0 4-4 4l-34 0q-4 0-4-4l0-40q0-4 4-4l34 0q0-4 4-4z",
+              "fill": "#FFFFFF",
+              "width": 34,
+              "height": 40
+            },
+            {
+              "type": "path",
+              "id": "bookR_128",
+              "x": 64,
+              "y": 72,
+              "name": "Book Right",
+              "opacity": 0.95,
+              "geometry": "M0 0l0 48q0 4 4 4l34 0q4 0 4-4l0-40q0-4-4-4l-34 0q0-4-4-4z",
+              "fill": "#FFFFFF",
+              "width": 34,
+              "height": 40
+            },
+            {
+              "type": "rectangle",
+              "id": "spine_128",
+              "x": 62,
+              "y": 72,
+              "name": "Spine",
+              "opacity": 0.3,
+              "fill": "#5B21B6",
+              "width": 4,
+              "height": 40
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 0.5,
+              "id": "line_128_0",
+              "x": 36,
+              "y": 84,
+              "name": "Line L1",
+              "opacity": 0.35,
+              "fill": "#7C3AED",
+              "width": 22,
+              "height": 2
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 0.5,
+              "id": "line_128_1",
+              "x": 36,
+              "y": 90,
+              "name": "Line L2",
+              "opacity": 0.35,
+              "fill": "#7C3AED",
+              "width": 18,
+              "height": 2
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 0.5,
+              "id": "line_128_2",
+              "x": 36,
+              "y": 96,
+              "name": "Line L3",
+              "opacity": 0.35,
+              "fill": "#7C3AED",
+              "width": 20,
+              "height": 2
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 0.5,
+              "id": "line_128_3",
+              "x": 70,
+              "y": 84,
+              "name": "Line R1",
+              "opacity": 0.35,
+              "fill": "#7C3AED",
+              "width": 22,
+              "height": 2
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 0.5,
+              "id": "line_128_4",
+              "x": 70,
+              "y": 90,
+              "name": "Line R2",
+              "opacity": 0.35,
+              "fill": "#7C3AED",
+              "width": 18,
+              "height": 2
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 0.5,
+              "id": "line_128_5",
+              "x": 70,
+              "y": 96,
+              "name": "Line R3",
+              "opacity": 0.35,
+              "fill": "#7C3AED",
+              "width": 20,
+              "height": 2
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "OC8dv",
+          "name": "lbl128",
+          "fill": "#999999",
+          "content": "128×128",
+          "fontFamily": "Inter",
+          "fontSize": 10,
+          "fontWeight": "500"
+        }
+      ]
+    }
+  ]
+}

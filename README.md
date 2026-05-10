@@ -1,5 +1,7 @@
 # amazon-to-obsidian
 
+![amazon-to-obsidian](images/icon-128.png)
+
 Amazon.co.jp / Amazon.com / booklog.jp の書誌情報を、Obsidian の [Advanced URI](https://github.com/Vinzent03/obsidian-advanced-uri) プラグイン経由で指定 Vault のフォルダに Markdown として保存します。
 
 - **デスクトップ**: Chrome 拡張機能としてインストール

@@ -3,8 +3,8 @@ pre-commit:
   jobs:
     - name: oxfmt
       glob: "*.{ts,tsx,js,mjs}"
-      run: pnpm exec oxfmt {staged_files}
+      run: npx oxfmt {staged_files}
       stage_fixed: true
     - name: oxlint
       glob: "*.{ts,tsx,js,mjs}"
-      run: pnpm exec oxlint {staged_files}
+      run: npx oxlint {staged_files}

@@ -5,7 +5,10 @@ const BS = String.fromCharCode(92)
 const DQ = String.fromCharCode(34)
 
 const escapeYaml = (s: string): string =>
-  s.split(BS).join(BS + BS).split(DQ).join(BS + DQ)
+  s.split(BS)
+    .join(BS + BS)
+    .split(DQ)
+    .join(BS + DQ)
 
 const splitAuthors = (authors: string): string[] =>
   authors

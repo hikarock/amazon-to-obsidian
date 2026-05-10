@@ -2,7 +2,7 @@
 
 ![amazon-to-obsidian](images/icon-128.png)
 
-Amazon.co.jp / Amazon.com / booklog.jp の書誌情報を、Obsidian の [Advanced URI](https://github.com/Vinzent03/obsidian-advanced-uri) プラグイン経由で指定 Vault のフォルダに Markdown として保存します。
+Amazon.co.jp / Amazon.com の書誌情報を、Obsidian の [Advanced URI](https://github.com/Vinzent03/obsidian-advanced-uri) プラグイン経由で指定 Vault のフォルダに Markdown として保存します。
 
 - **デスクトップ**: Chrome 拡張機能としてインストール
 - **iOS Safari**: ショートカットアプリから共有シート経由で起動 → [docs/ios-shortcut.md](docs/ios-shortcut.md)
@@ -43,7 +43,7 @@ npm run build
 
 ## 使い方
 
-1. Amazon 商品ページまたはブクログのアイテムページで拡張アイコンをクリック
+1. Amazon 商品ページで拡張アイコンをクリック
 2. 自動入力された書誌情報を必要に応じて編集
 3. 保存先の Vault を選び `Add to Obsidian` を押下
 4. Obsidian が起動し、指定フォルダに新規 Markdown ファイルが作成されます

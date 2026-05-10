@@ -1,7 +1,7 @@
 {
   "name": "amazon-to-obsidian",
   "version": "0.1.0",
-  "description": "Amazon/ブクログの書誌情報を Obsidian Vault に Markdown として登録する Chrome 拡張機能",
+  "description": "Amazon の書誌情報を Obsidian Vault に Markdown として登録する Chrome 拡張機能",
   "private": true,
   "scripts": {
     "build": "node build.mjs",

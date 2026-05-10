@@ -156,68 +156,12 @@ export class Amazon implements MetadataProvider {
   }
 }
 
-export class Booklog implements MetadataProvider {
-  getTitle(): string {
-    const elm = document.querySelector('[itemprop="name"]')
-    return elm?.textContent?.trim() ?? ""
-  }
-
-  getAuthors(): string {
-    const elm = document.querySelector('[itemprop="author"]')
-    return elm?.textContent?.trim() ?? ""
-  }
-
-  getPublisher(): string {
-    const elm = document.querySelector('[itemprop="publisher"]')
-    return elm?.textContent?.trim() ?? ""
-  }
-
-  getPublicationDate(): string {
-    const elm = document.querySelector('[itemprop="datePublished"]')
-    return elm?.getAttribute("content") ?? ""
-  }
-
-  getAsin(): string {
-    const m = location.href.match(/\/item\/1\/(.+)/)
-    return m && m[1] ? m[1] : ""
-  }
-
-  getMediaType(): MediaType {
-    return this.getAsin().startsWith("B") ? "Kindle" : "Book"
-  }
-
-  getCover(): string {
-    const elm = document.querySelector('[itemprop="thumbnailUrl"]')
-    return elm?.getAttribute("src") ?? ""
-  }
-
-  getMetaData(): BookMetadata {
-    return {
-      title: this.getTitle(),
-      authors: this.getAuthors(),
-      publisher: this.getPublisher(),
-      publicationDate: this.getPublicationDate(),
-      mediaType: this.getMediaType(),
-      cover: this.getCover(),
-      url: location.href,
-      pages: 0,
-      asin: this.getAsin(),
-    }
-  }
-}
-
 export const isAmazonHost = (hostname: string): boolean =>
   /^www\.amazon\.(com|co\.jp)$/.test(hostname)
-
-export const isBooklogHost = (hostname: string): boolean =>
-  /^booklog\.jp$/.test(hostname)
 
 export const resolveProvider = (hostname: string): MetadataProvider | null => {
   if (isAmazonHost(hostname)) {
     return new Amazon()
-  }
-  if (isBooklogHost(hostname)) {
-    return new Booklog()
   }
   return null
 }

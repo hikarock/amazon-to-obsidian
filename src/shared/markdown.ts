@@ -17,37 +17,38 @@ const splitAuthors = (authors: string): string[] =>
     .filter(Boolean)
 
 export function buildMarkdown(meta: BookMetadata): string {
-  const lines: string[] = ["---"]
+  const lines: string[] = ["---", "fileClass: book"]
   if (meta.title) {
-    lines.push(`title: "${escapeYaml(meta.title)}"`)
+    lines.push(`book-title: "${escapeYaml(meta.title)}"`)
   }
   const authors = splitAuthors(meta.authors)
   if (authors.length > 0) {
     lines.push(
-      `authors: [${authors.map((a) => `"${escapeYaml(a)}"`).join(", ")}]`,
+      `book-authors: [${authors.map((a) => `"${escapeYaml(a)}"`).join(", ")}]`,
     )
   }
   if (meta.publisher) {
-    lines.push(`publisher: "${escapeYaml(meta.publisher)}"`)
+    lines.push(`book-publisher: "${escapeYaml(meta.publisher)}"`)
   }
   if (meta.publicationDate) {
-    lines.push(`publication-date: ${meta.publicationDate}`)
+    lines.push(`book-publication-date: ${meta.publicationDate}`)
   }
   if (meta.mediaType) {
-    lines.push(`media-type: ${meta.mediaType}`)
+    lines.push(`book-media-type: ${meta.mediaType}`)
   }
   if (meta.asin) {
-    lines.push(`asin: ${meta.asin}`)
+    lines.push(`book-asin: ${meta.asin}`)
   }
   if (meta.url) {
-    lines.push(`url: "${escapeYaml(meta.url)}"`)
+    lines.push(`book-url: "${escapeYaml(meta.url)}"`)
   }
   if (meta.pages > 0) {
-    lines.push(`pages: ${meta.pages}`)
+    lines.push(`book-pages: ${meta.pages}`)
   }
   if (meta.cover) {
-    lines.push(`cover: "${escapeYaml(meta.cover)}"`)
+    lines.push(`book-cover: "${escapeYaml(meta.cover)}"`)
   }
+  lines.push(`book-status: ""`)
   lines.push("---", "")
   if (meta.cover) {
     lines.push(`![cover](${meta.cover})`, "")

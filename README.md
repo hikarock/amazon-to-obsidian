@@ -65,21 +65,33 @@ npm run build
 
 ```markdown
 ---
-title: '...'
-authors: ['...']
-publisher: '...'
-publication-date: 2024-01-01
-media-type: Book
-asin: B0XXXXXXXX
-url: 'https://...'
-pages: 320
-cover: 'https://...'
+fileClass: book
+book-title: '...'
+book-authors: ['...']
+book-publisher: '...'
+book-publication-date: 2024-01-01
+book-media-type: Book
+book-asin: B0XXXXXXXX
+book-url: 'https://...'
+book-pages: 320
+book-cover: 'https://...'
+book-status: ''
 ---
 
 ![cover](https://...)
 
 [Amazonで見る](https://...)
 ```
+
+## Metadata Menu との連携 (任意)
+
+生成される frontmatter は `fileClass: book` で識別されるよう設計されています。Obsidian の [Metadata Menu](https://github.com/mdelobelle/metadatamenu) プラグインに同梱の fileClass テンプレートを登録すると、`book-*` プロパティを型付きで編集・一覧表示できます。
+
+1. Metadata Menu プラグインを Vault にインストールし、設定画面の「Class files path」を任意のフォルダ (例: `_meta/file-classes`) に指定する
+2. リポジトリの [`docs/obsidian/book.md`](docs/obsidian/book.md) を、上記で指定したフォルダに `book.md` という名前でコピーする
+3. 本拡張から生成したノートを開くと、Metadata Menu が `book-*` フィールドを認識し、型に応じた編集 UI を提供する
+
+`book.md` 内の各フィールド `id:` は Vault 内で一意な識別子です。他の fileClass と衝突した場合は、Metadata Menu の UI 上でフィールドを開き直すと再生成されます。
 
 ## 開発
 
